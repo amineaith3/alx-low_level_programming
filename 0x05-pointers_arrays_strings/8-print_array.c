@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_array - prints a specific number of elemens
  * @a : an array of int
