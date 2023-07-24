@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * print_array - prints a specific number of elemens
