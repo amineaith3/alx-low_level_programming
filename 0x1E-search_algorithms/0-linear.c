@@ -3,7 +3,7 @@
 #include "search_algos.h"
 
 /**
- * linerar_search - function that searches for an element in an array
+ * linear_search - function that searches for an element in an array
  * @array: argument of type pointer int
  * @size: argument of type size_t
  * @value: argument of type int
