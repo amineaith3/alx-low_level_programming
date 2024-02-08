@@ -3,7 +3,7 @@
 
 
 /**
- * binary_search - searches for a value in a sorted array of integers
+ * _binary_search - searches for a value in a sorted array of integers
  * using the binary search algorithm
  * @array: array of integers
  * @left: Left element
@@ -52,15 +52,16 @@ int _binary_search(int *array, size_t left, size_t right, int value)
 
 int exponential_search(int *array, size_t size, int value)
 {
-	size_t i = 0, right;
+	size_t i = 1, right;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (-1);
 
-	if (array[0] != value)
+	
+	while (i < size && array[i] <= value)
 	{
-		for (i = 1; i < size && array[i] <= value; i *= 2)
-			printf("Value checked array [%ld] = [%d]\n", i, array[i]);
+		printf("Value checked array [%ld] = [%d]\n", i, array[i]);
+		i *= 2;
 	}
 
 	right = i < size ? i : size - 1;
